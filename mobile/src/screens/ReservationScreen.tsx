@@ -1,12 +1,14 @@
 import { useState } from "react";
 import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
-import { workshops } from "../data";
+import { workshopsData } from "../data/workshopsData";
 import { BackButton } from "../components/BackButton";
 import { colors, radius } from "../theme";
 import type { NavigateFn } from "../navigation/types";
 
+const NEXT_DATES = ["15 Haziran 2025", "22 Haziran 2025", "29 Haziran 2025"];
+
 export function ReservationScreen({ workshopId, onBack, onNavigate }: { workshopId: string; onBack: () => void; onNavigate: NavigateFn }) {
-  const w = workshops.find((x) => x.id === workshopId) ?? workshops[0];
+  const w = workshopsData.find((x) => x.id === workshopId) ?? workshopsData[0];
   const [step, setStep] = useState(0);
   const [selectedDate, setSelectedDate] = useState<string | null>(null);
 
@@ -17,7 +19,7 @@ export function ReservationScreen({ workshopId, onBack, onNavigate }: { workshop
           <Text style={styles.confirmTitle}>Rezervasyon Onaylandı</Text>
           <Text style={styles.confirmSub}>{w.title}</Text>
           <Text style={styles.confirmDate}>{selectedDate}</Text>
-          <Pressable style={styles.cta} onPress={() => onNavigate("home")}>
+          <Pressable style={styles.cta} onPress={() => onNavigate("discover")}>
             <Text style={styles.ctaText}>Ana Sayfaya Dön</Text>
           </Pressable>
         </View>
@@ -33,7 +35,7 @@ export function ReservationScreen({ workshopId, onBack, onNavigate }: { workshop
         <Text style={styles.sub}>{w.title}</Text>
         <Text style={styles.stepLabel}>{step === 0 ? "Tarih seçin" : "Onaylayın"}</Text>
         {step === 0 &&
-          w.nextDates.map((d) => (
+          NEXT_DATES.map((d) => (
             <Pressable key={d} style={[styles.dateBtn, selectedDate === d && styles.dateBtnActive]} onPress={() => setSelectedDate(d)}>
               <Text style={[styles.dateText, selectedDate === d && styles.dateTextActive]}>{d}</Text>
             </Pressable>

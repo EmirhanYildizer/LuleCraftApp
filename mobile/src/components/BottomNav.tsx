@@ -1,5 +1,5 @@
 import { Pressable, StyleSheet, Text, View } from "react-native";
-import { BookOpen, Compass, Map, Scissors, User } from "lucide-react-native";
+import { Compass, Map, Scissors, User, Users } from "lucide-react-native";
 import { colors } from "../theme";
 import type { Tab } from "../navigation/types";
 
@@ -9,10 +9,10 @@ interface BottomNavProps {
 }
 
 const tabs: { id: Tab; label: string; Icon: typeof Compass }[] = [
-  { id: "home", label: "Keşfet", Icon: Compass },
-  { id: "stories", label: "Hikayeler", Icon: BookOpen },
+  { id: "discover", label: "Keşfet", Icon: Compass },
+  { id: "masters", label: "Ustalar", Icon: Users },
   { id: "map", label: "Harita", Icon: Map },
-  { id: "workshops", label: "Atölyeler", Icon: Scissors },
+  { id: "workshop", label: "Atölye", Icon: Scissors },
   { id: "profile", label: "Profil", Icon: User },
 ];
 
@@ -46,8 +46,8 @@ const styles = StyleSheet.create({
     borderTopWidth: 1,
     borderTopColor: "rgba(201,164,106,0.15)",
   },
-  tab: { alignItems: "center", paddingVertical: 4, paddingHorizontal: 12, minWidth: 56 },
-  iconWrap: { padding: 4, borderRadius: 12 },
+  tab: { alignItems: "center", paddingVertical: 4, paddingHorizontal: 8, minWidth: 52 },
+  iconWrap: { padding: 6, borderRadius: 12 },
   iconWrapActive: { backgroundColor: "rgba(201,164,106,0.12)" },
   label: { fontFamily: "Inter_400Regular", fontSize: 9, color: colors.muted, marginTop: 2 },
   labelActive: { color: colors.gold, fontFamily: "Inter_600SemiBold" },
