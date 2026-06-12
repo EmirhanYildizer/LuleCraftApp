@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Animated, StyleSheet, Text, View } from "react-native";
 import { Image } from "expo-image";
 import { LinearGradient } from "expo-linear-gradient";
-import { LocalAssets } from "../AppAssets";
+import { AppAssets } from "../AppAssets";
 import { colors } from "../theme";
 
 export function SplashScreen({ onComplete }: { onComplete: () => void }) {
@@ -25,7 +25,7 @@ export function SplashScreen({ onComplete }: { onComplete: () => void }) {
   return (
     <Animated.View style={[styles.root, { opacity: fade }]}>
       {/* Arka plan: oymacılık / usta elleri */}
-      <Image source={LocalAssets.carvingHero} style={StyleSheet.absoluteFill} contentFit="cover" />
+      <Image source={{ uri: AppAssets.splashHero }} style={StyleSheet.absoluteFill} contentFit="cover" />
       <LinearGradient
         colors={["rgba(10,10,10,0.25)", "rgba(10,10,10,0.55)", "rgba(10,10,10,0.97)"]}
         style={StyleSheet.absoluteFill}

@@ -21,7 +21,7 @@
 export const AppAssets = {
   /** Oymacılık yapan usta elleri */
   luleStonRaw:
-    "https://images.unsplash.com/photo-1721508490084-1b1de5b230d4?w=800&q=80",
+    "https://www.kulturportali.gov.tr/repoKulturPortali/large/SehirRehberi//NeAlinir/20170202110112304_1.jpg?format=jpg&quality=50",
 
   /** İşlenmiş eser / tamamlanmış ürün */
   luleJewelry:
@@ -33,19 +33,19 @@ export const AppAssets = {
 
   /** Atölye içi ortam */
   luleWorkshop:
-    "https://images.unsplash.com/photo-1660796334912-8ce8e9c2cff0?w=800&q=80",
+    "https://arkeonews.com/wp-content/uploads/2021/07/Luletasi-min.jpg",
 
   /** Eskişehir / kültür sokakları */
   luleMap:
-    "https://images.unsplash.com/photo-1626252685663-64c6bf60afb1?w=800&q=80",
+    "https://www.gezire.com/wp-content/uploads/2024/12/Eskisehir-Luletasi-Muzesi-Giris-Ucreti.jpg",
 
   /** Elde kesme / oymacılık işlemi */
   luleCarving:
-    "https://images.unsplash.com/photo-1721508490084-1b1de5b230d4?w=800&q=80",
+    "https://www.kulturportali.gov.tr/repoKulturPortali/large/SehirRehberi//NeAlinir/20170202110112304_1.jpg?format=jpg&quality=50",
 
   /** Siyah pipo — geleneksel zanaat */
   lulePipe:
-    "https://images.unsplash.com/photo-1511306162219-1c5a469ab86c?w=800&q=80",
+    "https://gazeterizecom.teimg.com/crop/1280x720/gazeterize-com/uploads/2023/05/agency/iha/luletasi-sanati-icin-okullarda-bolum-acilmasi-onerisi.jpg",
 
   /** Ahşap / taş boncuk — tesbih */
   luleBeads:
@@ -57,7 +57,7 @@ export const AppAssets = {
 
   /** Eskişehir Odunpazarı sokakları */
   eskisehir:
-    "https://images.unsplash.com/photo-1626252685663-64c6bf60afb1?w=800&q=80",
+    "https://www.gezire.com/wp-content/uploads/2024/12/Eskisehir-Luletasi-Muzesi-Giris-Ucreti.jpg",
 
   /** Usta portresi 1 (zanaatkâr) */
   masterPortrait1:
@@ -71,9 +71,39 @@ export const AppAssets = {
   masterPortrait3:
     "https://images.unsplash.com/photo-1626252685663-64c6bf60afb1?w=400&q=80",
 
+  /** Açılış (splash) ve onboarding slayt 1 arka planı */
+  splashHero:
+    "https://milliiradecom.teimg.com/milliirade-com/uploads/2025/01/luletasi-sanati-icin-okullarda-bolum-acilmasi-onerisi.webp",
+
+  /** Keşfet ekranı hero arka planı */
+  discoverHero:
+    "https://eskisehirekspresnet.teimg.com/crop/1280x720/eskisehirekspres-net/images/haberler/2019/07/luletasi-festivali-basliyor_6ea2d.jpg",
+
+  /* ── Sanal Oymacılık — taş seçim kartları ── */
+
+  /** Ham lületaşı bloğu */
+  vcStoneRaw:
+    "https://images.unsplash.com/photo-1721508490084-1b1de5b230d4?w=800&q=80",
+
+  /** İşlenmiş / parlak yüzey */
+  vcStoneSmooth:
+    "https://images.unsplash.com/photo-1660796334938-cf0b03be7e6d?w=800&q=80",
+
+  /** Büyük blok — detay çalışması */
+  vcStoneLarge:
+    "https://images.unsplash.com/photo-1660796334912-8ce8e9c2cff0?w=800&q=80",
+
+  /** Ayşe Koç kapak görseli */
+  ayseKocCover:
+    "https://www.aa.com.tr/uploads/userFiles/9c85db40-ef31-40fe-a989-05c7e506d5d0/01_2024%2F09012024%2Fseramik2_.jpg",
+
+  /** İbrahim Yıldız kapak görseli */
+  ibrahimYildizCover:
+    "https://eskisehirekspresnet.teimg.com/eskisehirekspres-net/uploads/2023/03/eskisehirde-senelere-meydan-okuyan-luletasi-ustasi-eskisehirekspres-24032023-14.png",
+
   /** Genel atölye kapak */
   workshopGeneral:
-    "https://images.unsplash.com/photo-1660796334912-8ce8e9c2cff0?w=800&q=80",
+    "https://arkeonews.com/wp-content/uploads/2021/07/Luletasi-min.jpg",
 
   /** Profil avatarı placeholder — zanaat temalı siluet */
   profileAvatar:
@@ -83,23 +113,23 @@ export const AppAssets = {
 
   /** Lületaşı pipo — şekil: Pipo */
   shapePipe:
-    "https://images.unsplash.com/photo-1511306162219-1c5a469ab86c?w=400&q=80",
+    "https://www.akinluletasi.com/storage/images/038528169abc482f8cdcf98d793345a2.jpg",
 
   /** Kolye / taş takı — şekil: Kolye */
   shapeNecklace:
-    "https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=400&q=80",
+    "https://s3.cloud.ngn.com.tr/kitantik/images/2020-12-06/1br9qfykid2vpim1h6q.jpg",
 
   /** El yapımı figür / heykel — şekil: Figür */
   shapeFigure:
-    "https://images.unsplash.com/photo-1660796334938-cf0b03be7e6d?w=400&q=80",
+    "https://www.luletasidogaltas.com/uploads/b58b2a22ebe2.jpg",
 
   /** Geleneksel tesbih boncukları — şekil: Tesbih */
   shapeBeads:
-    "https://images.unsplash.com/photo-1614682740729-38ccfdb6d3e6?w=400&q=80",
+    "https://kulturveyasam.com/wp-content/uploads/2018/01/l%C3%BCle-04.jpg",
 
   /** Taş yüzük / mücevher — şekil: Yüzük */
   shapeRing:
-    "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400&q=80",
+    "https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=400&q=80",
 } as const;
 
 /**

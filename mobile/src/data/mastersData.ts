@@ -61,7 +61,7 @@ export const mastersData: MasterModel[] = [
       "Yüzey boyama",
     ],
     image: AppAssets.masterPortrait2,
-    coverImage: AppAssets.luleJewelry,
+    coverImage: AppAssets.ayseKocCover,
     gallery: [
       AppAssets.luleJewelry,
       AppAssets.luleStonRaw,
@@ -96,7 +96,7 @@ export const mastersData: MasterModel[] = [
       "El parlatma",
     ],
     image: AppAssets.masterPortrait3,
-    coverImage: AppAssets.luleBeads,
+    coverImage: AppAssets.ibrahimYildizCover,
     gallery: [AppAssets.luleBeads, AppAssets.luleStonRaw, AppAssets.eskisehir],
     workshopDescription:
       "İbrahim Usta'nın atölyesinde tesbih yapımının sırlarını öğrenirsiniz. Kendi boncuklarınızı şekillendirip bir araya getirerek kişisel tesbihinizi alırsınız.",

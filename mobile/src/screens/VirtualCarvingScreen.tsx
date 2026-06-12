@@ -8,9 +8,9 @@ import { colors, radius, spacing } from "../theme";
 
 /* ─── Veri ─────────────────────────────────────────────────── */
 const STONES = [
-  { id: "raw", label: "Ham Taş", sub: "Doğal yüzey", img: AppAssets.luleStonRaw },
-  { id: "smooth", label: "İşlenmiş", sub: "Parlak yüzey", img: AppAssets.luleWorkshop },
-  { id: "large", label: "Büyük Blok", sub: "Detay çalışması", img: AppAssets.luleCarving },
+  { id: "raw", label: "Ham Taş", sub: "Doğal yüzey", img: AppAssets.vcStoneRaw },
+  { id: "smooth", label: "İşlenmiş", sub: "Parlak yüzey", img: AppAssets.vcStoneSmooth },
+  { id: "large", label: "Büyük Blok", sub: "Detay çalışması", img: AppAssets.vcStoneLarge },
 ];
 
 const SHAPES = [
@@ -239,7 +239,7 @@ function PreviewStep({
   shape?: (typeof SHAPES)[0];
   pattern?: (typeof PATTERNS)[0];
 }) {
-  const previewImg = shape?.img ?? AppAssets.luleCarving;
+  const previewImg = shape?.img ?? AppAssets.vcStoneRaw;
 
   return (
     <View>

@@ -2,20 +2,25 @@ import { useState } from "react";
 import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
 import { Image } from "expo-image";
 import { LinearGradient } from "expo-linear-gradient";
-import { Clock } from "lucide-react-native";
+import { ChevronLeft, Clock } from "lucide-react-native";
 import { stories } from "../data";
 import { colors, radius } from "../theme";
 import type { NavigateFn } from "../navigation/types";
 
 const categories = ["Tümü", "Usta Hikayeleri", "Çırak Hikayeleri", "Kültürel Miras", "Lületaşı Gelenekleri"];
 
-export function StoriesScreen({ onNavigate }: { onNavigate: NavigateFn }) {
+export function StoriesScreen({ onNavigate, onBack }: { onNavigate: NavigateFn; onBack?: () => void }) {
   const [activeCategory, setActiveCategory] = useState("Tümü");
   const filtered = activeCategory === "Tümü" ? stories : stories.filter((s) => s.category === activeCategory);
 
   return (
     <ScrollView style={styles.root} showsVerticalScrollIndicator={false}>
       <View style={styles.header}>
+        {onBack && (
+          <Pressable onPress={onBack} style={styles.backBtn}>
+            <ChevronLeft size={20} color="#FFFFFF" strokeWidth={1.5} />
+          </Pressable>
+        )}
         <Text style={styles.label}>KEŞFET</Text>
         <Text style={styles.title}>Hikayeler</Text>
         <Text style={styles.sub}>Lületaşı ustalarının gözünden anlatılan hikayeler</Text>
@@ -47,7 +52,18 @@ export function StoriesScreen({ onNavigate }: { onNavigate: NavigateFn }) {
 
 const styles = StyleSheet.create({
   root: { flex: 1, backgroundColor: colors.background },
-  header: { paddingHorizontal: 24, paddingTop: 16, paddingBottom: 8 },
+  header: { paddingHorizontal: 24, paddingTop: 56, paddingBottom: 8 },
+  backBtn: {
+    position: "absolute",
+    top: 48,
+    left: 16,
+    width: 40,
+    height: 40,
+    borderRadius: 14,
+    backgroundColor: "rgba(27,27,27,0.9)",
+    alignItems: "center",
+    justifyContent: "center",
+  },
   label: { fontFamily: "Inter_500Medium", fontSize: 10, letterSpacing: 2, color: colors.gold },
   title: { fontFamily: "CormorantGaramond_300Light", fontSize: 36, color: colors.textPrimary },
   sub: { fontFamily: "Inter_300Light", fontSize: 12, color: colors.textSecondary, marginTop: 4 },

@@ -46,6 +46,7 @@ import { LocationDetailScreen } from "./src/screens/LocationDetailScreen";
 import { ProfileScreen } from "./src/screens/ProfileScreen";
 import { FavoritesScreen } from "./src/screens/FavoritesScreen";
 import { DiscoverDetailScreen } from "./src/screens/DiscoverDetailScreen";
+import { StoriesScreen } from "./src/screens/StoriesScreen";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -90,6 +91,8 @@ export default function App() {
     switch (id) {
       case "discover-detail":
         return <DiscoverDetailScreen contentId={params?.id ?? ""} onBack={goBack} />;
+      case "stories-list":
+        return <StoriesScreen onNavigate={navigate} onBack={goBack} />;
       case "master-detail":
         return <MasterDetailScreen masterId={params?.id ?? ""} onBack={goBack} onNavigate={navigate} />;
       case "story-detail":

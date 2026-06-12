@@ -2,7 +2,7 @@ import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
 import { Image } from "expo-image";
 import { LinearGradient } from "expo-linear-gradient";
 import { BookOpen, ChevronRight, Clock, Cpu, Eye, Gem, History, Info, MapPin, Video } from "lucide-react-native";
-import { AppAssets, LocalAssets } from "../AppAssets";
+import { AppAssets } from "../AppAssets";
 import { discoverContents, storiesData } from "../data/discoverData";
 import { colors, radius, spacing } from "../theme";
 import type { NavigateFn } from "../navigation/types";
@@ -22,7 +22,7 @@ export function DiscoverScreen({ onNavigate }: DiscoverScreenProps) {
     <ScrollView style={styles.root} showsVerticalScrollIndicator={false}>
       {/* Hero */}
       <View style={styles.hero}>
-        <Image source={LocalAssets.carvingHero} style={StyleSheet.absoluteFill} contentFit="cover" />
+        <Image source={{ uri: AppAssets.discoverHero }} style={StyleSheet.absoluteFill} contentFit="cover" />
         <LinearGradient
           colors={["rgba(10,10,10,0.1)", "rgba(10,10,10,0.5)", "rgba(10,10,10,0.98)"]}
           style={StyleSheet.absoluteFill}
@@ -63,7 +63,7 @@ export function DiscoverScreen({ onNavigate }: DiscoverScreenProps) {
 
       {/* Video Hikayeleri */}
       <View style={styles.section}>
-        <SectionHeader title="Video Hikayeleri" onPress={() => onNavigate("videos")} />
+        <SectionHeader title="Video Hikayeleri" />
         <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.horizontalList}>
           {[
             { title: "Ustanın Elleri", dur: "4:32", img: AppAssets.luleMaster },

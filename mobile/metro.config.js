@@ -5,14 +5,18 @@ const projectRoot = __dirname;
 
 const config = getDefaultConfig(projectRoot);
 
-// Metro'nun yalnızca mobile/ klasörünü izlemesini sağlar.
 // Üst dizindeki pnpm-workspace.yaml nedeniyle LüleCraft/ kökü
-// izlemeye alınıyordu; buradaki node_modules mevcut olmadığından
-// ENOENT hatası çıkıyordu.
-config.watchFolders = [projectRoot];
+// izlemeye alınmasın; sadece mobile/ klasörü izlensin.
+// Expo'nun varsayılan watchFolders listesiyle birleştiriyoruz.
+const defaultWatchFolders = config.watchFolders ?? [];
+config.watchFolders = [
+  ...new Set([...defaultWatchFolders, projectRoot]),
+];
 
+// nodeModulesPaths için de Expo varsayılanlarını koruyoruz.
+const defaultNodeModulePaths = config.resolver.nodeModulesPaths ?? [];
 config.resolver.nodeModulesPaths = [
-  path.resolve(projectRoot, "node_modules"),
+  ...new Set([...defaultNodeModulePaths, path.resolve(projectRoot, "node_modules")]),
 ];
 
 module.exports = config;

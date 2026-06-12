@@ -8,7 +8,7 @@ import { colors, radius } from "../theme";
 
 const slides = [
   {
-    image: AppAssets.luleWorkshop,
+    image: AppAssets.splashHero,
     tag: "01 — Keşif",
     title: "Eskişehir'in Gizli Mirasını Keşfet",
     body: "Yüzyıllardır süren geleneksel lületaşı sanatının kalbine yolculuğa çıkın. Her taşın ardında gizemli bir hikaye sizi bekliyor.",
