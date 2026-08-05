@@ -1,6 +1,5 @@
 
-  # Premium Cultural Heritage UI Design (Copy)
-
+  # Premium Cultural Heritage UI Design 
   This is a code bundle for Premium Cultural Heritage UI Design (Copy). The original project is available at https://www.figma.com/design/YzNi1NdZZeSJtqsF4z5Bw0/Premium-Cultural-Heritage-UI-Design--Copy-.
 
   ## Running the code
