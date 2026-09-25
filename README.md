@@ -1,6 +1,6 @@
 # LÜLETAŞI
 
-![LÜLETAŞI App Demo](./src/.scene.gif)
+<img src="src/scene.gif"/>
 
 > A modern mobile cultural heritage experience dedicated to discovering Eskişehir's world-renowned meerschaum culture through stories, artisans, workshops, locations, maps, and immersive experiences.
 
