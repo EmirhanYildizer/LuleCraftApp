@@ -1,7 +1,8 @@
 # LÜLETAŞI
 
-<img src="src/scene.gif"/>
-
+<p align="center">
+  <img src="src/scene.gif" alt="LÜLETAŞI App Demo" width="300">
+</p>
 > A modern mobile cultural heritage experience dedicated to discovering Eskişehir's world-renowned meerschaum culture through stories, artisans, workshops, locations, maps, and immersive experiences.
 
 [![React Native](https://img.shields.io/badge/React%20Native-0.81.5-61DAFB?logo=react&logoColor=white)](https://reactnative.dev/)
