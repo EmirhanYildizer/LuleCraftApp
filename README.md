@@ -1,226 +1,203 @@
 # LÜLETAŞI
 
-> Eskişehir'in dünyaca tanınan lületaşı kültürünü; hikâyeler, ustalar, atölyeler, keşif noktaları, harita ve artırılmış gerçeklik deneyimleri üzerinden dijital olarak keşfetmeyi amaçlayan mobil uygulama.
+> A modern mobile cultural heritage experience dedicated to discovering Eskişehir's world-renowned meerschaum culture through stories, artisans, workshops, locations, maps, and immersive experiences.
 
 [![React Native](https://img.shields.io/badge/React%20Native-0.81.5-61DAFB?logo=react&logoColor=white)](https://reactnative.dev/)
 [![Expo](https://img.shields.io/badge/Expo-SDK%2054-000020?logo=expo&logoColor=white)](https://expo.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Platform](https://img.shields.io/badge/Platform-iOS%20%7C%20Android-lightgrey)](https://reactnative.dev/)
 
-LÜLETAŞI, kültürel mirasın yalnızca metin ve görsellerle anlatılması yerine, kullanıcıyı keşfetmeye teşvik eden modern bir mobil deneyim olarak tasarlanmıştır. Proje aynı zamanda Figma Make ile oluşturulan web tabanlı tasarım/prototip ile gerçek React Native + Expo mobil uygulamasını aynı repository içerisinde barındırır.
+LÜLETAŞI is designed to make cultural heritage more than a collection of text and images. The project aims to create an interactive, visually rich, and discovery-oriented mobile experience around Eskişehir's meerschaum tradition.
+
+The repository contains both the original web-based prototype and the React Native + Expo mobile application.
 
 ---
 
-## İçindekiler
+## Table of Contents
 
-- [Proje Hakkında](#proje-hakkında)
-- [Temel Özellikler](#temel-özellikler)
-- [Teknoloji Altyapısı](#teknoloji-altyapısı)
-- [Proje Yapısı](#proje-yapısı)
-- [Mobil Uygulama Mimarisi](#mobil-uygulama-mimarisi)
-- [Kurulum](#kurulum)
-- [Çalıştırma](#çalıştırma)
-- [Geliştirme](#geliştirme)
-- [Ekranlar](#ekranlar)
-- [Tasarım Sistemi](#tasarım-sistemi)
-- [Veri Yapısı](#veri-yapısı)
-- [Web Prototipi](#web-prototipi)
-- [Figma](#figma)
-- [Build ve Yayına Alma](#build-ve-yayına-alma)
-- [Bilinen Sınırlamalar](#bilinen-sınırlamalar)
-- [Gelecek Geliştirmeler](#gelecek-geliştirmeler)
-- [Katkıda Bulunma](#katkıda-bulunma)
-- [Lisans ve Atıflar](#lisans-ve-atıflar)
-
----
-
-## Proje Hakkında
-
-LÜLETAŞI, Eskişehir'in önemli kültürel değerlerinden biri olan lületaşını dijital ortamda tanıtmak ve kullanıcıların bu mirası interaktif şekilde keşfetmesini sağlamak için geliştirilen bir kültürel miras keşif uygulamasıdır.
-
-Uygulamanın temel yaklaşımı:
-
-- Lületaşının tarihini ve kültürel önemini anlatmak
-- Lületaşı ustalarını ve üretim kültürünü görünür hâle getirmek
-- Atölye ve keşif noktalarını kullanıcıya sunmak
-- Harita üzerinden fiziksel keşif deneyimi oluşturmak
-- İçerikleri detay sayfaları üzerinden zenginleştirmek
-- Kullanıcının ilgisini çeken içerikleri favorilerine eklemesini sağlamak
-- Bildirimler ve kişiselleştirilmiş içerik alanları için mobil altyapı sunmak
-- Artırılmış gerçeklik (AR) fikrini kültürel miras deneyiminin bir parçası hâline getirmek
-
-Proje iki farklı yüzü birlikte içerir:
-
-1. **Web tabanlı tasarım/prototip:** Figma Make çıktılarının Vite + React tabanında çalıştırılabilen versiyonu.
-2. **Gerçek mobil uygulama:** React Native ve Expo ile iOS/Android için geliştirilen native mobil deneyim.
+- [About the Project](#about-the-project)
+- [Core Features](#core-features)
+- [Technology Stack](#technology-stack)
+- [Project Structure](#project-structure)
+- [Mobile Architecture](#mobile-architecture)
+- [Getting Started](#getting-started)
+- [Running the Project](#running-the-project)
+- [Application Screens](#application-screens)
+- [Design System](#design-system)
+- [Data Architecture](#data-architecture)
+- [Web Prototype](#web-prototype)
+- [Figma Design](#figma-design)
+- [Build & Deployment](#build--deployment)
+- [Current Limitations](#current-limitations)
+- [Future Improvements](#future-improvements)
+- [Development Guidelines](#development-guidelines)
+- [Contributing](#contributing)
+- [Attributions](#attributions)
+- [Project Status](#project-status)
+- [Author](#author)
+- [License](#license)
 
 ---
 
-## Temel Özellikler
+## About the Project
 
-### 🏛️ Kültürel Miras Keşfi
+LÜLETAŞI is a cultural heritage discovery application focused on **meerschaum**, one of Eskişehir's most recognizable cultural and artistic values.
 
-Uygulama, lületaşı kültürünü farklı içerik türlerine bölerek keşfedilebilir hâle getirir. Kullanıcı; hikâyeler, ustalar, atölyeler ve farklı lokasyonlar üzerinden içeriklere ulaşabilir.
+The main goal is to bring traditional craftsmanship and local heritage into a modern digital experience while keeping the cultural context at the center of the product.
 
-### 🔎 Keşfet
+The application is designed around several core ideas:
 
-Keşfet ekranı üzerinden kültürel içeriklerin listelenmesi ve içeriklerin detay sayfalarına geçiş yapılması hedeflenir.
+- Presenting the history and cultural importance of meerschaum
+- Introducing meerschaum artisans and craftsmen
+- Highlighting workshops and cultural locations
+- Providing location-based discovery through an interactive map
+- Connecting physical places with rich digital content
+- Allowing users to save interesting content to their favorites
+- Creating a foundation for notifications and personalized discovery
+- Exploring augmented reality as part of the cultural heritage experience
 
-Öne çıkan içerik türleri:
+The repository combines two complementary layers:
 
-- Kültürel hikâyeler
-- Lületaşı ile ilgili içerikler
-- Ustalar
-- Atölyeler
-- Keşif noktaları
-- Lokasyon bazlı içerikler
-
-### 👨‍🎨 Ustalar
-
-Lületaşı işçiliğinin önemli aktörlerini tanıtmak için ayrı bir usta deneyimi bulunur.
-
-Kullanıcılar:
-
-- Usta listesini görüntüleyebilir
-- Usta detaylarına gidebilir
-- Ustaların çalışmalarını ve bilgilerini inceleyebilir
-
-### 🗺️ İnteraktif Harita
-
-Harita ekranı, kültürel miras noktalarının konum bazlı keşfini desteklemek amacıyla hazırlanmıştır.
-
-Harita altyapısında `react-native-maps` kullanılmaktadır.
-
-Harita deneyimi aşağıdaki kullanım senaryolarını destekleyecek şekilde tasarlanmıştır:
-
-- Keşif noktalarını harita üzerinde görüntüleme
-- Lokasyon seçme
-- Lokasyon detayına geçme
-- Kullanıcının fiziksel keşfini dijital içerikle destekleme
-
-### 📍 Lokasyon Detayları
-
-Harita veya keşif akışından seçilen lokasyonlar için detay ekranları bulunur. Böylece fiziksel bir nokta yalnızca koordinat olarak değil, içerikle ilişkili bir kültürel miras noktası olarak sunulabilir.
-
-### ⭐ Favoriler
-
-Kullanıcının daha sonra tekrar görmek istediği içerikleri saklayabilmesi için favoriler ekranı bulunur.
-
-### 🔔 Bildirimler
-
-Mobil uygulamada bildirimler için ayrı bir ekran ve akış bulunmaktadır. Bu yapı ileride yeni içerikler, etkinlikler, keşif önerileri ve kullanıcıya özel hatırlatmalarla genişletilebilir.
-
-### 🥽 Artırılmış Gerçeklik
-
-`ARScreen` ile kültürel miras deneyiminin artırılmış gerçeklik tarafına genişletilebilmesi için uygulama içerisinde ayrı bir deneyim alanı oluşturulmuştur.
-
-Bu alan, projenin ilerleyen sürümlerinde fiziksel çevre ile dijital kültürel içeriğin birleştirilmesi için kullanılabilir.
-
-### 🎨 Premium Kültürel Miras Arayüzü
-
-Uygulama, klasik bir bilgi uygulaması görünümünden ziyade premium ve editoryal bir kültürel miras deneyimi hedefler.
-
-Tasarım yaklaşımında:
-
-- Serif + sans-serif tipografi kombinasyonu
-- Büyük görsel alanları
-- Kart tabanlı içerik sunumu
-- Yumuşak spacing değerleri
-- Kültürel miras hissini güçlendiren renk paleti
-- Modern native mobil navigasyon
-
-kullanılmaktadır.
+1. **Web prototype:** A Vite + React implementation originating from the Figma Make design/prototyping workflow.
+2. **Mobile application:** A React Native + Expo application targeting iOS and Android.
 
 ---
 
-## Teknoloji Altyapısı
+## Core Features
 
-### Mobil
+### Cultural Heritage Discovery
 
-| Teknoloji | Kullanım |
+The application organizes meerschaum-related information into multiple content categories so users can explore the subject from different perspectives.
+
+Potential content includes:
+
+- Historical stories
+- Cultural articles
+- Artisan profiles
+- Workshops
+- Discovery locations
+- Location-based heritage content
+
+### Discover
+
+The Discover experience acts as the main content exploration area. Users can browse cultural content and navigate to detailed views for individual entries.
+
+### Artisans & Masters
+
+A dedicated experience is provided for introducing the people behind meerschaum craftsmanship.
+
+Users can browse artisan/master profiles, open detailed profiles, explore their work and background, and connect individual craftsmen with the broader cultural story.
+
+### Interactive Map
+
+The map experience allows cultural locations and discovery points to be presented geographically.
+
+The mobile application uses `react-native-maps` for map functionality.
+
+The map architecture is intended to support cultural points of interest, location selection, location detail pages, and physical exploration supported by digital information.
+
+### Location Details
+
+Locations selected from the map or discovery flows can have their own detailed pages. This allows a physical location to become a complete cultural content entry rather than simply a map coordinate.
+
+### Favorites
+
+Users can save content they want to revisit later through the Favorites experience.
+
+### Notifications
+
+The application includes a dedicated notifications experience that can later be connected to new content announcements, events, discovery recommendations, and personalized reminders.
+
+### Augmented Reality
+
+The project includes an `ARScreen` dedicated to extending the cultural heritage experience into augmented reality.
+
+This provides a foundation for future experiences that combine the user's physical environment with digital cultural content.
+
+### Premium Editorial UI
+
+Rather than following a conventional information-app design, LÜLETAŞI aims for a premium, editorial visual language with serif + sans-serif typography, large visual areas, editorial content cards, generous spacing, heritage-inspired visuals, and modern native navigation.
+
+---
+
+## Technology Stack
+
+### Mobile
+
+| Technology | Purpose |
 |---|---|
-| React Native | Cross-platform mobil uygulama |
-| Expo SDK 54 | Mobil geliştirme ve build altyapısı |
-| TypeScript | Tip güvenliği ve geliştirici deneyimi |
-| React 19 | UI katmanı |
-| React Native Reanimated | Animasyon ve etkileşimler |
-| React Native Gesture Handler | Gesture tabanlı etkileşimler |
-| React Native Maps | Harita deneyimi |
-| React Native SVG | SVG tabanlı grafikler ve ikonlar |
-| Expo Image | Görsel yükleme/rendering |
-| Expo Linear Gradient | Gradient tabanlı görsel öğeler |
-| Expo Font | Özel font yükleme |
-| AsyncStorage | Yerel veri saklama |
-| Lucide React Native | İkon sistemi |
+| React Native | Cross-platform mobile application |
+| Expo SDK 54 | Mobile development and build infrastructure |
+| TypeScript | Type safety and maintainability |
+| React 19 | UI layer |
+| React Native Reanimated | Animations and interactions |
+| React Native Gesture Handler | Gesture-based interactions |
+| React Native Maps | Map experience |
+| React Native SVG | SVG rendering |
+| Expo Image | Image rendering |
+| Expo Linear Gradient | Gradient-based UI elements |
+| Expo Font | Custom font loading |
+| AsyncStorage | Local persistence |
+| Lucide React Native | Icon system |
 
-Mobil bağımlılıkların güncel repository sürümünde Expo SDK 54, React Native 0.81.5, React 19.1 ve TypeScript 5.9 tabanında yapılandırıldığı görülmektedir. fileciteturn5file0L2-L2
+### Web / Prototype
 
-### Web / Prototip
-
-| Teknoloji | Kullanım |
+| Technology | Purpose |
 |---|---|
-| React | Web arayüzü |
-| Vite | Development server ve production build |
-| TypeScript | Tip güvenliği |
-| Tailwind CSS | Stil altyapısı |
-| Radix UI | Erişilebilir UI primitive'leri |
-| Material UI | UI bileşenleri |
+| React | Web UI |
+| Vite | Development server and production build |
+| TypeScript | Type safety |
+| Tailwind CSS | Styling |
+| Radix UI | Accessible UI primitives |
+| Material UI | UI components |
 | React Router | Routing |
-| Motion | Animasyonlar |
-| Recharts | Veri görselleştirme |
-| React DnD | Drag & drop etkileşimleri |
-| date-fns | Tarih işlemleri |
-
-Web tarafında Vite tabanlı development/build komutları ve geniş bir React UI ekosistemi kullanılmaktadır. fileciteturn2file0L2-L2
+| Motion | Animations |
+| Recharts | Data visualization |
+| React DnD | Drag & drop interactions |
+| date-fns | Date utilities |
 
 ---
 
-## Proje Yapısı
-
-Repository, web prototipi ile gerçek mobil uygulamayı aynı proje içerisinde ayırır:
+## Project Structure
 
 ```text
 LuleCraftApp/
-├── mobile/                  # React Native + Expo mobil uygulaması
+├── mobile/                  # React Native + Expo mobile application
 │   ├── src/
-│   │   ├── components/      # Yeniden kullanılabilir native bileşenler
-│   │   ├── data/            # Mock/static içerikler
-│   │   ├── models/          # TypeScript veri modelleri
-│   │   ├── navigation/      # Navigasyon yapısı ve tipleri
-│   │   ├── screens/         # Uygulama ekranları
-│   │   ├── AppAssets.ts     # Mobil asset tanımları
-│   │   ├── theme.ts         # Tasarım token'ları
-│   │   └── typography.ts    # Tipografi tanımları
-│   ├── App.tsx              # Mobil uygulama giriş noktası
-│   ├── package.json         # Mobil bağımlılıklar ve scriptler
+│   │   ├── components/      # Reusable native UI components
+│   │   ├── data/            # Mock/static content
+│   │   ├── models/          # TypeScript data models
+│   │   ├── navigation/      # Navigation configuration and types
+│   │   ├── screens/         # Application screens
+│   │   ├── AppAssets.ts     # Mobile asset definitions
+│   │   ├── theme.ts         # Design tokens
+│   │   └── typography.ts    # Typography system
+│   ├── App.tsx              # Mobile application entry point
+│   ├── package.json         # Mobile dependencies and scripts
 │   └── ...
 │
-├── src/                     # Web/Figma Make prototipi
-├── guidelines/              # Tasarım/geliştirme yönergeleri
-├── images.jpg               # Repository görseli
-├── default_shadcn_theme.css # Web tema değişkenleri
-├── app.json                 # Expo/Figma Make ile ilişkili yapılandırma
-├── eas.json                 # Expo Application Services yapılandırması
-├── package.json             # Web bağımlılıkları
-├── pnpm-workspace.yaml      # pnpm workspace tanımı
-├── vite.config.ts           # Vite yapılandırması
-├── postcss.config.mjs       # PostCSS yapılandırması
+├── src/                     # Web / Figma Make prototype
+├── guidelines/              # Design/development guidelines
+├── images.jpg               # Repository visual
+├── default_shadcn_theme.css # Web theme variables
+├── app.json                 # Expo/project configuration
+├── eas.json                 # Expo Application Services configuration
+├── package.json             # Web dependencies
+├── pnpm-workspace.yaml      # pnpm workspace configuration
+├── vite.config.ts           # Vite configuration
+├── postcss.config.mjs       # PostCSS configuration
 └── README.md
 ```
 
-Repository'nin mevcut yapısında `mobile`, `src`, `guidelines`, `app.json`, `eas.json`, `package.json` ve Vite/PostCSS yapılandırmaları ayrı olarak bulunur. fileciteturn1file0L2-L2
-
 ---
 
-## Mobil Uygulama Mimarisi
+## Mobile Architecture
 
-Mobil uygulama, ekranları ve ortak altyapıyı birbirinden ayıran sade bir katmanlama yaklaşımı kullanır.
+The mobile application separates screens, reusable components, data, models, navigation, and design tokens.
 
 ### `src/screens/`
 
-Uygulamanın kullanıcı tarafından doğrudan görülen ekranları burada bulunur.
-
-Mevcut ekran yapısında örnek olarak:
+Contains user-facing screens including:
 
 - `OnboardingScreen.tsx`
 - `HomeScreen.tsx`
@@ -237,97 +214,68 @@ Mevcut ekran yapısında örnek olarak:
 - `ExperienceScreen.tsx`
 - `ARScreen.tsx`
 
-gibi ekranlar bulunmaktadır. fileciteturn7file0L2-L2
-
 ### `src/components/`
 
-Birden fazla ekranda kullanılabilecek ortak native UI bileşenlerinin tutulduğu katmandır.
-
-Amaç:
-
-- Kod tekrarını azaltmak
-- Tasarım sistemini korumak
-- Ortak UI davranışlarını tek noktadan yönetmek
-- Ekranların daha okunabilir olmasını sağlamak
+Reusable UI components shared across multiple screens. This helps reduce duplication and maintain a consistent design language.
 
 ### `src/data/`
 
-Uygulamanın prototip/mock içeriklerinin tutulduğu katmandır.
-
-Örneğin:
-
-- Hikâyeler
-- Ustalar
-- Lokasyonlar
-- Atölyeler
-- Keşif içerikleri
-
-gibi içerikler burada modellenebilir.
+Contains mock and static content used during the prototype and development stages, such as stories, artisans, locations, workshops, and discovery content.
 
 ### `src/models/`
 
-Uygulama içerisinde kullanılan veri modellerinin TypeScript tanımlarını barındırır.
-
-Bu katman, ileride gerçek bir backend/API entegrasyonu yapıldığında veri sözleşmelerinin daha kontrollü yönetilmesini kolaylaştırır.
+Contains TypeScript models representing the application's domain data. This keeps data structures separated from UI implementation and makes future API integration easier.
 
 ### `src/navigation/`
 
-Ekranlar arasındaki navigation akışlarının ve ilgili tiplerin tutulduğu katmandır.
+Contains navigation configuration and navigation-related types.
 
 ### `src/theme.ts`
 
-Renk, spacing ve diğer tasarım token'larının merkezi olarak yönetilmesini sağlar.
+Centralizes colors, spacing, and other visual design tokens.
 
 ### `src/typography.ts`
 
-Uygulamanın tipografik sistemini merkezi olarak tanımlar.
-
-Mobil tarafta Cormorant Garamond ve Inter font paketleri kullanılmaktadır. fileciteturn5file0L2-L2
+Centralizes typography definitions. The mobile application uses Cormorant Garamond and Inter as its primary font families.
 
 ---
 
-## Kurulum
+## Getting Started
 
-### Gereksinimler
-
-Önerilen geliştirme ortamı:
+### Requirements
 
 - Node.js
-- npm 10.x veya uyumlu güncel npm sürümü
-- Expo CLI / Expo tooling
-- Android Studio ve Android SDK — Android native çalıştırma için
-- Xcode — iOS native çalıştırma için macOS üzerinde
-- Expo Go — fiziksel cihaz üzerinden hızlı test için
+- npm 10.x or a compatible current version
+- Expo tooling
+- Android Studio + Android SDK for Android development
+- Xcode for native iOS development on macOS
+- Expo Go for quick physical-device testing
 
-Mobil package tanımında package manager olarak `npm@10.8.2` belirtilmiştir. fileciteturn5file0L2-L2
-
----
-
-## Çalıştırma
-
-### 1. Repository'yi klonla
+### Clone the Repository
 
 ```bash
 git clone https://github.com/EmirhanYildizer/LuleCraftApp.git
 cd LuleCraftApp
 ```
 
-### 2. Mobil uygulamayı kur
+### Install Mobile Dependencies
 
 ```bash
 cd mobile
 npm install
 ```
 
-### 3. Expo development server'ı başlat
+---
+
+## Running the Project
+
+### Start Expo
 
 ```bash
 npm start
 ```
 
-Terminalde açılan Expo arayüzündeki QR kodu Expo Go ile tarayarak uygulamayı fiziksel cihazda çalıştırabilirsin.
-
-Mobil package içerisinde aşağıdaki scriptler tanımlıdır: `start`, `android`, `ios` ve `web`. fileciteturn5file0L2-L2
+This starts the Expo development server. You can then open the application using Expo Go or a development build.
 
 ### Android
 
@@ -335,15 +283,13 @@ Mobil package içerisinde aşağıdaki scriptler tanımlıdır: `start`, `androi
 npm run android
 ```
 
-Bu komut Expo'nun Android native çalışma akışını başlatır.
-
 ### iOS
 
 ```bash
 npm run ios
 ```
 
-> iOS native geliştirme/build işlemleri için macOS ve Xcode gerekir.
+> Native iOS development requires macOS and Xcode.
 
 ### Web
 
@@ -351,132 +297,83 @@ npm run ios
 npm run web
 ```
 
-Bu komut Expo'nun web çalışma modunu başlatır.
-
 ---
 
-## Web Prototipini Çalıştırma
+## Running the Web Prototype
 
-Repository'nin kök dizininde web/Figma Make prototipi bulunur.
+From the repository root:
 
 ```bash
 npm install
 npm run dev
 ```
 
-Ardından Vite'ın verdiği local URL üzerinden web prototipini açabilirsin.
-
-Production build almak için:
+For a production web build:
 
 ```bash
 npm run build
 ```
 
-Kök package tanımında `dev` ve `build` scriptleri Vite üzerinden çalışmaktadır. fileciteturn2file0L2-L2
+The web prototype uses Vite for development and production builds.
 
 ---
 
-## Ekranlar
+## Application Screens
 
-### Onboarding
-
-Kullanıcıya uygulamanın amacını ve temel deneyimini tanıtan ilk kullanım akışıdır.
-
-### Home
-
-Ana keşif deneyiminin başlangıç noktasıdır. Öne çıkan kültürel içeriklerin ve uygulama içindeki önemli alanların kullanıcıya sunulması için kullanılır.
-
-### Discover
-
-Kültürel miras içeriklerinin keşfedildiği ana içerik ekranıdır.
-
-### Discover Detail
-
-Keşfedilen bir içeriğin daha kapsamlı şekilde incelendiği detay ekranıdır.
-
-### Masters
-
-Lületaşı ustalarının listelendiği ekran.
-
-### Master Detail
-
-Seçilen ustanın detaylı bilgilerinin gösterildiği ekran.
-
-### Artisan
-
-Lületaşı işçiliği/ustalık deneyiminin ayrı bir içerik alanı olarak sunulduğu ekran.
-
-### Map
-
-Kültürel miras noktalarının konum tabanlı olarak keşfedildiği harita ekranı.
-
-### Location Detail
-
-Harita üzerinden seçilen bir lokasyonun detaylarının gösterildiği ekran.
-
-### Favorites
-
-Kullanıcının kaydettiği içeriklere tekrar erişmesini sağlayan alan.
-
-### Notifications
-
-Bildirimlerin listelendiği mobil ekran.
-
-### Profile
-
-Kullanıcı profili ve kişisel uygulama alanları için ayrılmış ekran.
-
-### Experience
-
-Kullanıcıya daha interaktif bir kültürel miras deneyimi sunmak için ayrılmış deneyim alanı.
-
-### AR
-
-Artırılmış gerçeklik tabanlı deneyimler için ayrılmış ekran.
+| Screen | Description |
+|---|---|
+| Onboarding | Introduces the application and initial user experience. |
+| Home | Main starting point for featured and important cultural content. |
+| Discover | Main content exploration experience. |
+| Discover Detail | Detailed view of a selected discovery item. |
+| Masters | List of meerschaum masters and artisans. |
+| Master Detail | Detailed information about an individual master. |
+| Artisan | Dedicated craftsmanship-related content experience. |
+| Map | Geographic exploration of cultural locations and points of interest. |
+| Location Detail | Detailed information about a selected location. |
+| Favorites | Access to content saved by the user. |
+| Notifications | Notification center and future notification-driven experiences. |
+| Profile | User-related information and settings. |
+| Experience | Interactive cultural heritage experience area. |
+| AR | Entry point for augmented-reality-based experiences. |
 
 ---
 
-## Tasarım Sistemi
+## Design System
 
-LÜLETAŞI'nın görsel dili, kültürel miras ile modern mobil uygulama tasarımını birleştirmeyi amaçlar.
+LÜLETAŞI combines traditional cultural heritage aesthetics with a modern mobile product language.
 
-### Tipografi
+### Typography
 
-Mobil uygulamada iki temel font ailesi kullanılmaktadır:
+- **Cormorant Garamond** — editorial headings, cultural storytelling, and expressive titles
+- **Inter** — body copy, buttons, labels, and interface text
 
-- **Cormorant Garamond:** Başlıklar, kültürel/editorial vurgular ve karakterli metin alanları
-- **Inter:** Gövde metinleri, butonlar, açıklamalar ve UI metinleri
+### Theme
 
-Bu fontlar Expo Google Fonts paketleri üzerinden projeye dahil edilmiştir. fileciteturn5file0L2-L2
+Theme values are centralized in `mobile/src/theme.ts`, while typography values are centralized in `mobile/src/typography.ts`.
 
-### Tema
-
-Tema değerleri `mobile/src/theme.ts` içerisinde merkezi olarak tutulur. Tipografi değerleri ise `mobile/src/typography.ts` dosyasından yönetilir.
-
-Bu yaklaşım, tasarım değişikliklerinin tüm uygulamaya daha kontrollü şekilde uygulanmasını sağlar.
+This makes it easier to maintain visual consistency and apply design changes globally.
 
 ---
 
-## Veri Yapısı
+## Data Architecture
 
-Mevcut mobil sürümde içeriklerin önemli bir bölümü local/mock veri yaklaşımıyla modellenmiştir.
+The current application uses a local/mock-data approach for a significant part of its content model.
 
-Bu yapı özellikle prototip aşamasında:
+This allows the team to:
 
-- API olmadan ekranların geliştirilmesini
-- UI akışlarının hızlı test edilmesini
-- İçerik modelinin erken aşamada oluşturulmasını
-- Backend entegrasyonundan bağımsız ilerlenmesini
+- Build screens without depending on a backend
+- Validate UX flows quickly
+- Establish domain models early
+- Iterate on content structures independently from API development
 
-sağlar.
-
-İleride gerçek bir backend eklendiğinde `models` katmanının API response modelleriyle eşleştirilmesi ve `data` katmanının repository/service yapısına dönüştürülmesi mümkündür.
+A future production architecture can replace the mock data layer with a repository/service layer connected to a backend API while keeping UI and domain models relatively isolated.
 
 ---
 
-## Web Prototipi ve Mobil Uygulama İlişkisi
+## Web Prototype
 
-Repository'nin önemli özelliklerinden biri tasarım/prototip ile gerçek mobil uygulamanın birlikte geliştirilmesidir.
+The repository includes a web prototype alongside the mobile application.
 
 ```text
 Figma / Figma Make
@@ -485,37 +382,29 @@ Figma / Figma Make
 Web Prototype
 React + Vite + Tailwind
         │
-        │ Tasarım referansı
+        │ Design reference
         ▼
 React Native + Expo
-Gerçek iOS / Android uygulaması
+Real iOS / Android application
 ```
 
-Mobil README'sinde de web prototipi ile mobil uygulama ayrımı açıkça belirtilmiştir: kök dizindeki prototip Vite + Tailwind tabanlıdır; `/mobile` ise gerçek iOS/Android uygulamasını içerir. fileciteturn4file0L2-L2
-
-Bu yapı, tasarımın hızlı prototiplenmesini ve daha sonra native mobil deneyime aktarılmasını kolaylaştırır.
+This workflow makes it possible to iterate rapidly on the visual experience while developing the actual cross-platform mobile product in parallel.
 
 ---
 
-## Figma
-
-Projenin tasarım referansı:
+## Figma Design
 
 **Premium Cultural Heritage UI Design**
 
 [Open the Figma Design](https://www.figma.com/design/YzNi1NdZZeSJtqsF4z5Bw0/Premium-Cultural-Heritage-UI-Design--Copy-)
 
-Repository'deki mevcut README de projenin Figma tasarımından üretildiğini belirtmektedir. fileciteturn3file0L2-L2
-
 ---
 
-## Build ve Yayına Alma
+## Build & Deployment
 
-Proje Expo SDK 54 tabanında hazırlandığı için production build sürecinde Expo Application Services (EAS) kullanılabilir.
+The mobile project is based on Expo SDK 54 and includes an `eas.json` configuration for Expo Application Services.
 
-Repository içerisinde `eas.json` dosyası bulunmaktadır.
-
-Genel production akışı:
+A typical production workflow:
 
 ```text
 Development
@@ -532,7 +421,7 @@ QA & Device Testing
     ▼
 EAS Build
     │
-    ├── Android → AAB/APK
+    ├── Android → AAB / APK
     │
     └── iOS → IPA
     │
@@ -540,102 +429,95 @@ EAS Build
 Store Submission
 ```
 
-> Store'a gönderimden önce package identifier, app icon, splash screen, permissions, signing credentials, privacy policy ve production configuration değerleri ayrıca kontrol edilmelidir.
+Before release, review package/bundle identifiers, icons, splash screens, permissions, signing credentials, production environment variables, privacy policy, store metadata, analytics, and error monitoring.
 
 ---
 
-## Bilinen Sınırlamalar
+## Current Limitations
 
-Bu repository mevcut hâliyle ağırlıklı olarak UI/UX, prototipleme ve mobil uygulama deneyimine odaklanmaktadır.
+The repository currently focuses heavily on UI/UX, content structure, prototyping, and the native mobile experience.
 
-Production'a geçiş öncesinde aşağıdaki alanların gerçek ürün ihtiyaçlarına göre tamamlanması gerekebilir:
+Depending on the final production scope, the following areas may require further implementation:
 
-- Gerçek backend/API entegrasyonu
-- Production veri kaynağı
-- Kullanıcı hesabı ve authentication
-- Cloud tabanlı favoriler/senkronizasyon
-- Gerçek bildirim altyapısı
-- İçerik yönetim sistemi
-- Harita marker/veri yönetiminin backend ile entegrasyonu
-- AR deneyiminin cihaz bazında production hâle getirilmesi
+- Production backend/API integration
+- Cloud-based content management
+- Authentication and user accounts
+- Cloud-synchronized favorites
+- Production push notifications
+- Content management/admin panel
+- Backend-driven map data
+- Production-grade AR functionality
 - Analytics
-- Crash/error monitoring
-- Offline/cache stratejisi
-- Production environment yönetimi
-- App Store / Google Play metadata ve release süreçleri
-
-Bu maddeler mevcut kodun çalışmadığı anlamına gelmez; projenin prototipten production ürününe taşınması sırasında ele alınabilecek geliştirme alanlarını ifade eder.
+- Crash and error monitoring
+- Offline/cache strategy
+- Production environment management
+- App Store and Google Play release configuration
 
 ---
 
-## Gelecek Geliştirmeler
+## Future Improvements
 
-LÜLETAŞI'nın daha kapsamlı bir kültürel miras platformuna dönüşmesi için düşünülebilecek geliştirmeler:
+### Content
 
-### İçerik
+- Multi-language support
+- Expanded historical archive
+- Artisan interviews
+- Video content
+- Audio guides
+- Historical timelines
+- Interactive meerschaum production stories
 
-- Çoklu dil desteği
-- Daha fazla hikâye ve arşiv içeriği
-- Usta röportajları
-- Video içerikler
-- Sesli rehber
-- Tarihsel zaman çizelgesi
-- Lületaşı üretim sürecinin interaktif anlatımı
+### Discovery
 
-### Keşif
+- Location-based recommendations
+- Walking routes
+- Curated cultural routes
+- Nearby heritage points
+- Discovery progress tracking
+- Badges and collections
 
-- Konum bazlı öneriler
-- Rota oluşturma
-- Kullanıcıya özel keşif rotaları
-- Yakındaki kültürel noktalar
-- Gezi tamamlanma sistemi
-- Rozet ve koleksiyon sistemi
+### Augmented Reality
 
-### AR
+- Physical artifact recognition
+- 3D meerschaum models
+- AR information cards
+- Historical visualizations
+- Camera-based interactive discovery
 
-- Fiziksel eser tanıma
-- 3D lületaşı modelleri
-- AR bilgi kartları
-- Tarihsel canlandırmalar
-- Kamera üzerinden interaktif keşif
+### Social Features
 
-### Sosyal
+- Share discoveries
+- Share collections
+- User comments
+- Events
+- Community features
 
-- Keşiflerin paylaşılması
-- Favori koleksiyonlarının paylaşılması
-- Kullanıcı yorumları
-- Etkinlikler
-- Topluluk özellikleri
+### Administration
 
-### Yönetim
-
-- Admin panel
-- İçerik CRUD işlemleri
-- Usta/lokasyon yönetimi
-- Harita noktası yönetimi
-- Bildirim gönderimi
-- İçerik yayınlama planlaması
+- Admin dashboard
+- Content CRUD
+- Artisan management
+- Location management
+- Map point management
+- Push notification management
+- Scheduled content publishing
 - Analytics dashboard
 
 ---
 
-## Geliştirme Prensipleri
+## Development Guidelines
 
-Projeye katkı sağlarken aşağıdaki prensiplerin korunması önerilir:
-
-1. **TypeScript kullanın.** Yeni kod mümkün olduğunca tip güvenli olmalıdır.
-2. **Ortak UI'ı component'leştirin.** Aynı tasarım farklı ekranlarda tekrar ediyorsa ortak component oluşturun.
-3. **Tema değerlerini merkezi tutun.** Renk, spacing ve typography değerlerini ekranların içine sabitlemek yerine tema sistemini kullanın.
-4. **Ekranları küçük ve anlaşılır tutun.** Büyük ekran bileşenlerini gerektiğinde alt component'lere ayırın.
-5. **Mock data ile domain modelini karıştırmayın.** Veri modelleri `models`, örnek içerikler `data` altında tutulmalıdır.
-6. **Native davranışları önceliklendirin.** Mobil uygulamada Safe Area, gesture, scroll ve platform farklılıklarını göz önünde bulundurun.
-7. **Tasarım tutarlılığını koruyun.** Yeni ekranlar mevcut tipografi, spacing ve component diline uyum sağlamalıdır.
+1. **Use TypeScript.** Keep new code strongly typed whenever possible.
+2. **Create reusable components.** Extract repeated UI patterns into shared components.
+3. **Keep design tokens centralized.** Avoid hardcoding global colors, spacing, and typography inside individual screens.
+4. **Keep screens focused.** Split large screens into smaller components when appropriate.
+5. **Separate domain models from mock content.** Keep models and sample data in their respective layers.
+6. **Respect native behavior.** Account for safe areas, gestures, scrolling, and platform differences.
+7. **Maintain design consistency.** New screens should follow the existing typography, spacing, component, and visual language.
 
 ---
 
-## Katkıda Bulunma
-
-Katkıda bulunmak için:
+## Contributing
 
 ```bash
 git clone https://github.com/EmirhanYildizer/LuleCraftApp.git
@@ -645,13 +527,13 @@ npm install
 npm start
 ```
 
-Ardından yeni bir branch oluşturabilirsiniz:
+Create a feature branch:
 
 ```bash
 git checkout -b feature/new-feature
 ```
 
-Değişikliklerinizi yaptıktan sonra:
+After making changes:
 
 ```bash
 git add .
@@ -659,31 +541,25 @@ git commit -m "feat: add new feature"
 git push origin feature/new-feature
 ```
 
-Pull Request açarken mümkün olduğunca:
-
-- Değişikliğin amacını açıklayın
-- Etkilenen ekranları belirtin
-- Test ettiğiniz platformları belirtin
-- UI değişikliklerinde ekran görüntüsü/video ekleyin
-- Gereksiz dosya ve dependency eklemeyin
+Pull Requests should include a clear description, affected screens/features, platforms tested, and screenshots or a short video for UI changes where appropriate.
 
 ---
 
-## Atıflar
+## Attributions
 
-Projede kullanılan üçüncü taraf kaynakların lisans ve attribution bilgileri için repository içerisindeki [`ATTRIBUTIONS.md`](./ATTRIBUTIONS.md) dosyasına bakabilirsiniz.
-
----
-
-## Proje Durumu
-
-**Durum:** Active Development / Prototype → Mobile Product
-
-LÜLETAŞI, kültürel miras odaklı bir mobil deneyimin tasarım ve native uygulama katmanlarını bir araya getiren aktif bir geliştirme projesidir.
+Please review [`ATTRIBUTIONS.md`](./ATTRIBUTIONS.md) for third-party resources, licenses, and attribution requirements used by the project.
 
 ---
 
-## Geliştirici
+## Project Status
+
+**Status:** Active Development / Prototype → Mobile Product
+
+LÜLETAŞI is an active cultural heritage project combining visual prototyping, native mobile development, interactive discovery, location-based experiences, and future immersive technologies.
+
+---
+
+## Author
 
 **Emirhan Yıldızer**
 
@@ -692,13 +568,13 @@ LÜLETAŞI, kültürel miras odaklı bir mobil deneyimin tasarım ve native uygu
 
 ---
 
-## Lisans
+## License
 
-Bu repository için lisans koşulları ayrıca belirtilmedikçe, kaynak kodun ve proje asset'lerinin kullanım hakları repository sahibine aittir. Üçüncü taraf içerikler için ilgili lisans ve attribution koşulları geçerlidir.
+Unless a specific license is provided in the repository, the source code and project assets remain the property of the repository owner. Third-party resources remain subject to their respective licenses and attribution requirements.
 
 ---
 
 <p align="center">
   <strong>LÜLETAŞI</strong><br />
-  <sub>Eskişehir'in kültürel mirasını dijital dünyada keşfet.</sub>
+  <sub>Discover Eskişehir's cultural heritage through a modern digital experience.</sub>
 </p>
