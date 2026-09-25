@@ -1,5 +1,7 @@
 # LÜLETAŞI
 
+![LÜLETAŞI App Demo](./src/.scene.mp4)
+
 > A modern mobile cultural heritage experience dedicated to discovering Eskişehir's world-renowned meerschaum culture through stories, artisans, workshops, locations, maps, and immersive experiences.
 
 [![React Native](https://img.shields.io/badge/React%20Native-0.81.5-61DAFB?logo=react&logoColor=white)](https://reactnative.dev/)
@@ -124,37 +126,37 @@ Rather than following a conventional information-app design, LÜLETAŞI aims for
 
 ### Mobile
 
-| Technology | Purpose |
-|---|---|
-| React Native | Cross-platform mobile application |
-| Expo SDK 54 | Mobile development and build infrastructure |
-| TypeScript | Type safety and maintainability |
-| React 19 | UI layer |
-| React Native Reanimated | Animations and interactions |
-| React Native Gesture Handler | Gesture-based interactions |
-| React Native Maps | Map experience |
-| React Native SVG | SVG rendering |
-| Expo Image | Image rendering |
-| Expo Linear Gradient | Gradient-based UI elements |
-| Expo Font | Custom font loading |
-| AsyncStorage | Local persistence |
-| Lucide React Native | Icon system |
+| Technology                   | Purpose                                     |
+| ---------------------------- | ------------------------------------------- |
+| React Native                 | Cross-platform mobile application           |
+| Expo SDK 54                  | Mobile development and build infrastructure |
+| TypeScript                   | Type safety and maintainability             |
+| React 19                     | UI layer                                    |
+| React Native Reanimated      | Animations and interactions                 |
+| React Native Gesture Handler | Gesture-based interactions                  |
+| React Native Maps            | Map experience                              |
+| React Native SVG             | SVG rendering                               |
+| Expo Image                   | Image rendering                             |
+| Expo Linear Gradient         | Gradient-based UI elements                  |
+| Expo Font                    | Custom font loading                         |
+| AsyncStorage                 | Local persistence                           |
+| Lucide React Native          | Icon system                                 |
 
 ### Web / Prototype
 
-| Technology | Purpose |
-|---|---|
-| React | Web UI |
-| Vite | Development server and production build |
-| TypeScript | Type safety |
-| Tailwind CSS | Styling |
-| Radix UI | Accessible UI primitives |
-| Material UI | UI components |
-| React Router | Routing |
-| Motion | Animations |
-| Recharts | Data visualization |
-| React DnD | Drag & drop interactions |
-| date-fns | Date utilities |
+| Technology   | Purpose                                 |
+| ------------ | --------------------------------------- |
+| React        | Web UI                                  |
+| Vite         | Development server and production build |
+| TypeScript   | Type safety                             |
+| Tailwind CSS | Styling                                 |
+| Radix UI     | Accessible UI primitives                |
+| Material UI  | UI components                           |
+| React Router | Routing                                 |
+| Motion       | Animations                              |
+| Recharts     | Data visualization                      |
+| React DnD    | Drag & drop interactions                |
+| date-fns     | Date utilities                          |
 
 ---
 
@@ -320,22 +322,22 @@ The web prototype uses Vite for development and production builds.
 
 ## Application Screens
 
-| Screen | Description |
-|---|---|
-| Onboarding | Introduces the application and initial user experience. |
-| Home | Main starting point for featured and important cultural content. |
-| Discover | Main content exploration experience. |
-| Discover Detail | Detailed view of a selected discovery item. |
-| Masters | List of meerschaum masters and artisans. |
-| Master Detail | Detailed information about an individual master. |
-| Artisan | Dedicated craftsmanship-related content experience. |
-| Map | Geographic exploration of cultural locations and points of interest. |
-| Location Detail | Detailed information about a selected location. |
-| Favorites | Access to content saved by the user. |
-| Notifications | Notification center and future notification-driven experiences. |
-| Profile | User-related information and settings. |
-| Experience | Interactive cultural heritage experience area. |
-| AR | Entry point for augmented-reality-based experiences. |
+| Screen          | Description                                                          |
+| --------------- | -------------------------------------------------------------------- |
+| Onboarding      | Introduces the application and initial user experience.              |
+| Home            | Main starting point for featured and important cultural content.     |
+| Discover        | Main content exploration experience.                                 |
+| Discover Detail | Detailed view of a selected discovery item.                          |
+| Masters         | List of meerschaum masters and artisans.                             |
+| Master Detail   | Detailed information about an individual master.                     |
+| Artisan         | Dedicated craftsmanship-related content experience.                  |
+| Map             | Geographic exploration of cultural locations and points of interest. |
+| Location Detail | Detailed information about a selected location.                      |
+| Favorites       | Access to content saved by the user.                                 |
+| Notifications   | Notification center and future notification-driven experiences.      |
+| Profile         | User-related information and settings.                               |
+| Experience      | Interactive cultural heritage experience area.                       |
+| AR              | Entry point for augmented-reality-based experiences.                 |
 
 ---
 
